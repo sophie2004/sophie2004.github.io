@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(155deg, #153826, #0b2c1f, #0f4c40);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 80%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 10px 0 5px; /* Reduced margin */
+}
+
+p {
+    margin: 5px 0 10px; /* Reduced margin */
+}
+
+.google-logo {
+    margin: 10px 0; /* Adjust the margin to control spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-logo img {
+    width: 100%; /* Adjust the width to fit your design */
+    height: auto;
+    max-width: 110px;
+    border-radius: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #444; /* Change the background color as needed */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #666; /* Darker background on hover */
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Space from the icon links */
+    padding: 10px; /* Padding inside the container */
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    width: fit-content; /* Fit the content width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow for 3D effect */
+}
+
+.resume-button {
+    color: #444; /* Text color */
+    text-decoration: none; /* No underline */
+    font-size: 16px; /* Text size */
+    font-weight: bold;
+}
