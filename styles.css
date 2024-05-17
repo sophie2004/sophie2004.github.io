@@ -25,11 +25,11 @@ body, html {
 }
 
 h1 {
-    margin: 10px 0 5px; /* Reduced margin */
+    margin: 10px 0 15px; /* Reduced margin */
 }
 
 p {
-    margin: 5px 0 10px; /* Reduced margin */
+    margin: 15px 0 10px; /* Reduced margin */
 }
 
 .google-logo {
@@ -63,20 +63,15 @@ p {
 }
 
 .resume-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Space from the icon links */
-    padding: 10px; /* Padding inside the container */
-    background-color: white; /* White background */
-    border-radius: 10px; /* Rounded corners */
-    width: fit-content; /* Fit the content width */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow for 3D effect */
+    text-align: center; /* Center the content within the container */
+    margin-top: 10px;
 }
-
 .resume-button {
-    color: #444; /* Text color */
-    text-decoration: none; /* No underline */
-    font-size: 16px; /* Text size */
-    font-weight: bold;
+    display: inline-block; /* Ensure the button behaves like an inline element for centering */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
 }
