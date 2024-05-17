@@ -12,60 +12,6 @@
     <!-- mobile nav -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-
-    <style>
-        nav {
-            background-color: #1d402e;
-            overflow: hidden;
-            display: flex;
-            justify-content: right;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .section {
-            display: none;
-            padding: 20px;
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        .about-section {
-        text-align: left; /* Ensure text is left-aligned */
-        max-width: 800px; /* Limit the width of the section for better readability */
-        margin: 0 auto; /* Center the section within the container */
-        padding: 20px; /* Add padding for spacing */
-        }
-
-        .about-section h2 {
-    border-bottom: 2px solid #333; /* Add a bottom border to the heading */
-    padding-bottom: 10px; /* Add padding below the heading */
-}
-
-.about-section p {
-    margin-bottom: 15px; /* Add margin between paragraphs */
-}
-
-.about-section ul {
-    list-style-type: circle; /* Change list style to circle */
-    padding-left: 20px; /* Add padding to the left */
-}
-
-.about-section ul li {
-    margin-bottom: 10px; /* Add margin between list items */
-}
-    </style>
 </head>
 <body>
     <nav>
@@ -91,20 +37,30 @@
         </div>
         <!-- About Section -->
         <div id="about" class="section about-section">
-            <h2>About Me</h2>
-            <p>Hey, my name is Sophie Agbekpenou, and I am a junior at Columbia University studying Computer Science (Class of 2026). I am an aspiring software engineer with a passion for developing innovative solutions.</p>
-            
-            <p>I am deeply committed to diversity and inclusion in tech and believe in the power of technology to drive positive change. Outside of tech, I love listening to music and exploring the outdoors.</p>
-        
-            <p>Some of my interests include:</p>
-            <ul>
-                <li>Web development</li>
-                <li>Artificial intelligence</li>
-                <li> Finance & Sociology </li>
-                <li>History</li>
-                <li>Running</li>
-                <li> Afrobeats </li>
-            </ul>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p> Hey, my name is Sophie Agbekpenou, and I am a junior at Columbia University, </p>
+                    <p> studying Computer Science (Class of 2026). I am originally from the horse </p>
+                    <p> capital of the world: Lexington Kentucky. I am deeply committed to diversity </p>
+                    <p> and inclusion in tech and believe in the power of technology to drive positive change. </p>
+                    <p> Outside of academic, I love listening to music and exploring the outdoors.</p>
+                    <p>Some of my interests include:</p>
+                        <ul>
+                            <li>stuff</li>
+                            <li>stuff</li>
+                            <li>stuff</li>
+                            <li>stuff</li>
+                            <li>stuff</li>
+                        </ul>
+                </div>
+                <div class="photo-gallery">
+                    <img src="assets/photo1.jpeg" alt="Photo 1" class="gallery-img">
+                    <img src="assets/photo2.jpeg" alt="Photo 2" class="gallery-img">
+                    <img src="assets/photo3.png" alt="Photo 3" class="gallery-img">
+                    <img src="assets/photo4.jpeg" alt="Photo 4" class="gallery-img">
+                </div>
+            </div>
         </div>
         
         
@@ -131,3 +87,4 @@
     </script>
 </body>
 </html>
+

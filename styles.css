@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'proxima-nova', sans-serif;
 }
 
 .container {
@@ -11,8 +11,9 @@ body, html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: white; 
     background: linear-gradient(155deg, #153826, #0b2c1f, #0f4c40);
+ 
     background-blend-mode: multiply;
     background-size: cover;
 }
@@ -75,3 +76,85 @@ p {
     border-radius: 5px;
     text-decoration: none;
 }
+
+
+nav {
+    background-color: #1d402e;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.section {
+    display: none;
+    padding: 20px;
+}
+
+.section.active {
+    display: block;
+}
+
+.about-section {
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -250px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 10px;
+}
+
+.about-text {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 17px;
+    align-self: start; 
+}
+
+.about-text h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-decoration: overline solid 4px;
+    margin-top: 50px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 0.8em;
+    font-size: 16px;
+}
+
+.about-text ul {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.3em;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-auto-rows: 175px; /* Set a fixed height for each row */
+    grid-gap: 10px;
+}
+
+.gallery-img {
+    width: 92%;
+    height: 92%; /* Make sure the image takes up the full cell */
+    object-fit: cover; /* This ensures the image covers the cell without distortion */
+    border: 2px solid rgb(138, 241, 227);
+}
+
