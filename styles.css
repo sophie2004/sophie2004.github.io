@@ -25,11 +25,11 @@ body, html {
 }
 
 h1 {
-    margin: 10px 0 15px; /* Reduced margin */
+    margin: 15px 0 15px; /* Reduced margin */
 }
 
 p {
-    margin: 15px 0 10px; /* Reduced margin */
+    margin: 15px 0 15px; /* Reduced margin */
 }
 
 .google-logo {
@@ -69,7 +69,7 @@ p {
 .resume-button {
     display: inline-block; /* Ensure the button behaves like an inline element for centering */
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
     background-color: white;
     border-radius: 5px;
