@@ -215,7 +215,7 @@ nav a:hover {
 
 .contact-left h2 {
     margin-top: 0x;
-    font-size: 1.45em;
+    font-size: 1.5em;
 }
 
 .contact-left .social-links {
@@ -232,7 +232,7 @@ nav a:hover {
     text-decoration: none;
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s;
-    margin-top: -12px;
+    margin-top: -20px;
     color: #444;
     background-color: rgb(243, 238, 238); /* Change the background color as needed */
 }
