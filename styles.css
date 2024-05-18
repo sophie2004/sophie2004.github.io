@@ -191,6 +191,85 @@ nav a:hover {
     margin-top: -300px;
 }
 
+.contact-content {
+    display: flex;
+    flex-direction: row; /* Align items side by side */
+    justify-content: center; /* Center the content */
+    width: 100%;
+    box-sizing: border-box;
+    gap: 2px; /* Add gap between the left and right sections */
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start;
+    width: 30%; /* Set the width for the left section */
+}
 
 
+.contact-right {
+    width: 50%; /* Set the width for the right section */
+}
 
+.contact-left h2 {
+    margin-top: 0x;
+    font-size: 1.45em;
+}
+
+.contact-left .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-left .social-links a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 11px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s;
+    margin-top: -12px;
+    color: #444;
+    background-color: rgb(243, 238, 238); /* Change the background color as needed */
+}
+
+.contact-left .social-links a:hover, .resume-button:hover {
+    background-color: #666; /* Darker background on hover */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 75%;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px 0; /* Increase margin to add more space */
+    border-radius: 4.5px;
+    border: 1px solid #ccc;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-form textarea {
+    height: 140px; /* Adjust the height of the textarea */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 9px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #444;
+    background-color: rgb(169, 230, 219);
+    border: none;
+    border-radius: 4.5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}

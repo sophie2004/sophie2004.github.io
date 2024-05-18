@@ -6,6 +6,9 @@
     <title>Sophie Agbekpenou</title>
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
+    <!-- javascript -->
+    <script src="script.js" defer></script>
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
@@ -18,20 +21,20 @@
         <a href="#home" class="tab-link active">Home</a>
         <a href="#about" class="tab-link">About</a>
         <a href="#work" class="tab-link">Work</a>
+        <a href="#contact" class="tab-link">Contact</a>
     </nav>
     <div class="container">
         <!-- Home Section -->
         <div id="home" class="section active home-section">
             <div class="intro">
                 <div class="profile-photo">
-    <img src="assets/sophie-headshot.jpg" alt="Sophie Agbekpenou">
-    <div class="social-links">
-        <a href="https://linkedin.com/in/sophie-flore/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/sophie2004" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="assets/Agbekpenou-resume.pdf" target="_blank" class="resume-button"><i class="fas fa-file-alt"></i> resume</a>
-    </div>
-</div>
-
+                    <img src="assets/sophie-headshot.jpg" alt="Sophie Agbekpenou">
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/sophie-flore/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sophie2004" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="assets/Agbekpenou-resume.pdf" target="_blank" class="resume-button"><i class="fas fa-file-alt"></i> resume</a>
+                    </div>
+                </div>
                 <div class="intro-text">
                     <h1 class="typing">Hello, my name is Sophie.</h1>
                     <p>I'm a junior at Columbia University, majoring in Computer Science (Class of 2026). I am an aspiring software engineer with a strong interest in Artificial Intelligence and Applied Machine Learning. I am particularly passionate about leveraging these technologies to revolutionize education, making learning more accessible, personalized, and effective.</p>
@@ -39,7 +42,6 @@
                 </div>
             </div>
         </div>
-        
         
         <!-- About Section -->
         <div id="about" class="section about-section">
@@ -52,13 +54,13 @@
                     <p> and inclusion in tech and believe in the power of technology to drive positive change. </p>
                     <p> Outside of academic, I love listening to music and exploring the outdoors.</p>
                     <p>Some of my interests include:</p>
-                        <ul>
-                            <li>stuff</li>
-                            <li>stuff</li>
-                            <li>stuff</li>
-                            <li>stuff</li>
-                            <li>stuff</li>
-                        </ul>
+                    <ul>
+                        <li>stuff</li>
+                        <li>stuff</li>
+                        <li>stuff</li>
+                        <li>stuff</li>
+                        <li>stuff</li>
+                    </ul>
                 </div>
                 <div class="photo-gallery">
                     <img src="assets/photo1.jpeg" alt="Photo 1" class="gallery-img">
@@ -72,26 +74,33 @@
         <!-- Work Section -->
         <div id="work" class="section work-section">
             <h2>Work</h2>
-            
             <div class="photo-gallery">
                 <img src="assets/photo1.jpeg" alt="Photo 1" class="gallery-img">
             </div>
         </div>
+
+
+        <div id="contact" class="section contact-section">
+            <div class="contact-content">
+                <div class="contact-left">
+                    <h2>Let's Connect!</h2>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/sophie-flore/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sophie2004" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="assets/Agbekpenou-resume.pdf" target="_blank" class="resume-button"><i class="fas fa-file-alt"></i> resume</a>
+                    </div>
+                </div>                
+                <div class="contact-right">
+                    <form class="contact-form">
+                        <input type="text" name="first-name" placeholder="First Name">
+                        <input type="text" name="last-name" placeholder="Last Name">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>           
     </div>
-
-    <script>
-        document.querySelectorAll('.tab-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelectorAll('.tab-link').forEach(link => link.classList.remove('active'));
-                document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
-
-                link.classList.add('active');
-                const target = document.querySelector(link.getAttribute('href'));
-                target.classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
-
